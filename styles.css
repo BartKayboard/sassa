@@ -1,0 +1,75 @@
+/* Estilos generales */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #f9f9f9;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+  }
+  
+  h1 {
+   text-align:center ;
+  }
+  
+  .button-container {
+      display:flex ;
+      justify-content:center ; 
+      margin-top :30px;   
+  } 
+  
+  .button{
+     padding:12px ;
+     background-color:#007bff ;
+     color:#fff ;
+     border:none ;
+     border-radius :4px ;    
+  }
+  
+  /* Animación de la ruleta */
+  @keyframes rotateAnimation {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+  }
+  
+  .ruleta-img {
+      animation-name: rotateAnimation;
+      animation-duration:5s; /* Duración de la animación en segundos */
+      animation-timing-function:cubic-bezier(.15,.41,.69,.94);
+      animation-iteration-count: infinite; /* Repetir infinitamente */
+  }
+  
+  /* Estilos adicionales para mostrar el porcentaje de probabilidades y el saldo actual */
+  .probability-percentage,
+  .current-balance {
+      text-align:right !important;
+      font-size:.8rem !important;
+      margin-right:.5rem !important;
+      margin-bottom:.3rem !important
+  }
+  
+  .probability-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #fff;
+}
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 50px;
+    position: relative; /* Agregar posición relativa */
+  }
+  
+  .current-balance {
+    position: absolute; /* Agregar posición absoluta */
+    top: 0; /* Colocar en la esquina superior izquierda */
+    left: 0; /* Colocar en la esquina superior izquierda */
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semitransparente */
+    color: #fff;
+  }
